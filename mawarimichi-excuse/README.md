@@ -15,13 +15,13 @@ npm install
 
 ### 2. 環境変数の設定
 
-`.env.local` ファイルに Gemini API キーを設定してください：
+`.env.local` ファイルに GLM API キーを設定してください：
 
 ```
-GEMINI_API_KEY=your_gemini_api_key_here
+GLM_API_KEY=your_glm_api_key_here
 ```
 
-Gemini API キーは [Google AI Studio](https://aistudio.google.com/apikey) から取得できます。
+GLM API キーは BigModel コンソールで取得してください。
 
 ### 3. 開発サーバーの起動
 
@@ -36,7 +36,7 @@ npm run dev
 - **フロントエンド**: Next.js 15 (App Router) + TypeScript
 - **スタイリング**: カスタムCSS（2000年代初頭の日本の役所風デザイン） + Tailwind CSS
 - **画像生成**: html2canvas（証明書をPNG画像としてダウンロード）
-- **AI**: Gemini API（gemini-2.0-flash）
+- **AI**: GLM API（glm-4.7-flash / OpenAI互換API）
 
 ## ディレクトリ構成
 
@@ -46,7 +46,7 @@ mawarimichi-excuse/
 │   ├── app/
 │   │   ├── api/
 │   │   │   └── generate/
-│   │   │       └── route.ts        # Gemini API連携エンドポイント
+│   │   │       └── route.ts        # GLM API連携エンドポイント
 │   │   ├── globals.css             # 役所風グローバルCSS
 │   │   ├── layout.tsx              # ルートレイアウト
 │   │   └── page.tsx                # メインページ
